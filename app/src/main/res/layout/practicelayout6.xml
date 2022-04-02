@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_of_layout">
+
+    <View
+        android:id="@+id/app_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="13dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/app_bar_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/herken_de_vlinder"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/app_bar_view"
+        app:layout_constraintEnd_toStartOf="@+id/hamburger"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/hamburger"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="13dp"
+        android:src="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="@+id/app_bar_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vlinderkleur"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="@string/vlinderkleur"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/oranje"
+        app:layout_constraintEnd_toStartOf="@+id/oranje"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/oranje" />
+
+    <TextView
+        android:id="@+id/oranje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="3dp"
+        android:text="@string/oranje"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vlinderkleur"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_view" />
+
+<!--    <View-->
+<!--        android:id="@+id/main_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@color/white"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/vlinderkleur" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vlinderkleur" >
+
+        <ImageView
+            android:id="@+id/butterfly1a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/butterfly1"
+            app:layout_constraintDimensionRatio="13:12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".447" />
+
+        <ImageView
+            android:id="@+id/butterfly2a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/butterfly2"
+            app:layout_constraintDimensionRatio="13:12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".447" />
+
+        <TextView
+            android:id="@+id/argusvlinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="@string/argusvlinder"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly1a"
+            app:layout_constraintTop_toBottomOf="@+id/butterfly1a" />
+
+        <TextView
+            android:id="@+id/bont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="@string/bont_zandoogje"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly2a"
+            app:layout_constraintTop_toBottomOf="@+id/butterfly2a" />
+
+        <TextView
+            android:id="@+id/lasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:text="@string/lasiommata_megera"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly1a"
+            app:layout_constraintTop_toBottomOf="@+id/argusvlinder"/>
+
+        <TextView
+            android:id="@+id/para"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pararge_aegeria"
+            android:layout_marginTop="-3dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly2a"
+            app:layout_constraintTop_toBottomOf="@+id/bont"/>
+
+        <ImageView
+            android:id="@+id/butterfly3a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/butterfly3"
+            app:layout_constraintDimensionRatio="13:12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lasi"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".447" />
+
+        <ImageView
+            android:id="@+id/butterfly4a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/butterfly4"
+            app:layout_constraintDimensionRatio="13:12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/para"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".447" />
+
+        <TextView
+            android:id="@+id/bruin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="@string/bruin_zandoogje"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly3a"
+            app:layout_constraintTop_toBottomOf="@+id/butterfly3a" />
+
+        <TextView
+            android:id="@+id/dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="@string/distelvlinder"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly4a"
+            app:layout_constraintTop_toBottomOf="@+id/butterfly4a" />
+
+        <TextView
+            android:id="@+id/mani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:text="@string/maniola_jurtina"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly3a"
+            app:layout_constraintTop_toBottomOf="@+id/bruin"/>
+
+        <TextView
+            android:id="@+id/vanessa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vanessa_cardui"
+            android:layout_marginTop="-3dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/butterfly4a"
+            app:layout_constraintTop_toBottomOf="@+id/dist"/>
+
+        <ImageView
+            android:id="@+id/butterfly5a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/butterfly5"
+            app:layout_constraintDimensionRatio="13:12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mani"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".447" />
+
+        <ImageView
+            android:id="@+id/butterfly6a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/butterfly6"
+            app:layout_constraintDimensionRatio="13:12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vanessa"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".447" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

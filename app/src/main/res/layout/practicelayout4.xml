@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_of_layout">
+
+
+    <RelativeLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/herkin_de_vlinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/herken_de_vlinder"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/hamburger"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/menu" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/two_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/app_bar"
+        android:background="@color/background_of_layout">
+
+        <TextView
+            android:id="@+id/vlinderkleur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="140dp"
+            android:text="@string/vlinderkleur"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/vlinderkleur"
+            android:paddingStart="5dp"
+            android:text="@string/oranje"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_below="@+id/two_text_view"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/butterfly1"
+            android:layout_width="180dp"
+            android:layout_height="172dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/butterfly1" />
+
+        <TextView
+            android:id="@+id/aardbeivlinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butterfly1"
+            android:layout_marginStart="13dp"
+            android:paddingTop="3dp"
+            android:text="@string/argusvlinder"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aardbeivlinder"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="-3dp"
+            android:text="@string/lasiommata_megera"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/butterfly2"
+            android:layout_width="180dp"
+            android:layout_height="172dp"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/butterfly2" />
+
+        <TextView
+            android:id="@+id/bont_zandoogje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butterfly2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="194dp"
+            android:paddingTop="3dp"
+            android:text="@string/bont_zandoogje"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bont_zandoogje"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="-3dp"
+            android:text="@string/pararge_aegeria"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/a"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/butterfly3"
+            android:layout_width="180dp"
+            android:layout_height="172dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/butterfly3" />
+
+        <TextView
+            android:id="@+id/bruin_zandoogje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butterfly3"
+            android:layout_marginStart="13dp"
+            android:paddingTop="3dp"
+            android:text="@string/bruin_zandoogje"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bruin_zandoogje"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="-3dp"
+            android:text="@string/maniola_jurtina"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/butterfly4"
+            android:layout_width="180dp"
+            android:layout_height="172dp"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/butterfly4" />
+
+        <TextView
+            android:id="@+id/distelvlinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butterfly4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="194dp"
+            android:paddingTop="3dp"
+            android:text="@string/distelvlinder"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distelvlinder"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="-3dp"
+            android:text="@string/pararge_aegeria"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/b"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/butterfly5"
+            android:layout_width="180dp"
+            android:layout_height="172dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/butterfly5" />
+
+        <TextView
+            android:id="@+id/bruin_zandoogje2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butterfly5"
+            android:layout_marginStart="13dp"
+            android:paddingTop="3dp"
+            android:text="@string/bruin_zandoogje"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bruin_zandoogje2"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="-3dp"
+            android:text="@string/maniola_jurtina"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="172dp"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/butterfly6" />
+
+        <TextView
+            android:id="@+id/distelvlinder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butterfly5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="194dp"
+            android:paddingTop="3dp"
+            android:text="@string/distelvlinder"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_below="@+id/distelvlinder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="-3dp"
+            android:text="@string/pararge_aegeria"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

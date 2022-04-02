@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_of_layout">
+
+    <RelativeLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/back2" />
+
+        <TextView
+            android:id="@+id/herkin_de_vlinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/vlinders_met_vakantie"
+            android:textSize="20sp"
+            android:textColor="@color/text_colour"/>
+
+        <ImageView
+            android:id="@+id/hamburger"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/hameburger" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/dikkopjes"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingStart="10dp"
+            android:paddingTop="7dp"
+            android:text="@string/dikkopjes"
+            android:textColor="@color/text_colour"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/butterfly71"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/dikkopjes"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/butterfly1" />
+
+        <TextView
+            android:id="@+id/zwart"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/dikkopjes"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@id/butterfly71"
+            android:gravity="center"
+            android:text="@string/zwart"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/thym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zwart"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@id/butterfly71"
+            android:gravity="center"
+            android:text="@string/thymelicus_lineola"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/butterfly71"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/button1"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="@color/text_colour" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/thym"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/zero"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/butterfly712"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/butterfly2" />
+
+        <TextView
+            android:id="@+id/zwart2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@id/butterfly712"
+            android:gravity="center"
+            android:text="@string/bretons"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/thym2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zwart2"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@id/butterfly712"
+            android:gravity="center"
+            android:text="@string/pyrgus_arm"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/butterfly712"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/zero2"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym2"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/button12"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textColor="@color/text_colour" />
+
+        <Button
+            android:id="@+id/plus2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/thym2"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/zero2"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/grote"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/butterfly10"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/butterfly6" />
+
+        <TextView
+            android:id="@+id/zwart234"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@+id/butterfly10"
+            android:gravity="center"
+            android:text="@string/koninginnenpage"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/thym234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zwart234"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@id/butterfly10"
+            android:gravity="center"
+            android:text="@string/pyrgus_malvae"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button1234"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym234"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/butterfly10"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/zero234"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym234"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/button1234"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="@color/text_colour" />
+
+        <Button
+            android:id="@+id/plus234"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/thym234"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/zero234"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/grote"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/main_layout3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:paddingStart="10dp"
+        android:paddingTop="14dp"
+        android:text="@string/grote_pages"
+        android:textColor="@color/text_colour"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/main_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_layout2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/butterfly123"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/butterfly3" />
+
+        <TextView
+            android:id="@+id/zwart23"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@+id/butterfly123"
+            android:gravity="center"
+            android:text="@string/aardbeivlinder"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/thym23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zwart23"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@id/butterfly123"
+            android:gravity="center"
+            android:text="@string/pyrgus_malvae"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button123"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym23"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/butterfly123"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/zero23"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thym23"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/button123"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="@color/text_colour" />
+
+        <Button
+            android:id="@+id/plus23"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/thym23"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/zero23"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/main_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button2"
+        android:text="@string/telling_opslaan"
+        android:textColor="@color/text_colour"
+        android:textSize="18sp" />
+
+</RelativeLayout>
